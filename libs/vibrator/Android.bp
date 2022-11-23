@@ -71,11 +71,6 @@ cc_library {
         ":libvibrator_aidl",
         "ExternalVibration.cpp",
     ],
-    
-    lto: {
-        thin: true,
-    },
-    whole_program_vtables: true, // Requires ThinLTO
 }
 
 cc_library {
